@@ -35,15 +35,15 @@ public class Area_Fragment extends Fragment {
                     @Override
                     public void onClick(View v) {
 
-                        if (TextUtils.isEmpty(editText.getText().toString())){
+                        if (TextUtils.isEmpty(editText.getText().toString())) {
                             Toast.makeText(getActivity(), "Enter radius", Toast.LENGTH_SHORT).show();
                             return;
                         }
 
                         float radius = Float.parseFloat(editText.getText().toString());
-                        float area = 3.14f * radius * radius ;
+                        float area = 3.14f * radius * radius;
 
-                        Toast.makeText(getActivity(), "Area of circle : "+area, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "Area of circle : " + area, Toast.LENGTH_SHORT).show();
 
                     }
                 });

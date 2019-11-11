@@ -69,7 +69,7 @@ public class Login extends Fragment {
                         intent.putExtra(EXTRA_MESSAGE, Username);
                         startActivity(intent);
                     } else {
-                        Toast.makeText(getActivity(), "Username & Password did not match", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), "Username and Password does not match", Toast.LENGTH_LONG).show();
                         edname.setText("");
                         edpwd.setText("");
                     }

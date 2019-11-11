@@ -71,7 +71,7 @@ public class Signup extends Fragment {
                             final User userdetail = testLogin.getUserList().get(i);
                             Toast.makeText(getActivity(), "" + userdetail.getUser(), Toast.LENGTH_SHORT).show();
                         }
-                        Toast.makeText(getActivity(), "Signup Sucessful : " + Username, Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), "Signup Sucessful", Toast.LENGTH_LONG).show();
                         etname.setText("");
                         etpwd.setText("");
                         etcpwd.setText("");

@@ -32,12 +32,12 @@ public class ContactFragment extends Fragment {
         // Create a list of contacts to display in RecyclerView
         List<Contacts> contactsList = new ArrayList<>();
         // Adding all the contacts object in list
-        contactsList.add(new Contacts("Dahayang Rai" ,"9801234567",R.drawable.bridge));
-        contactsList.add(new Contacts("Bhuwan KC" ,"980123777",R.drawable.logo));
-        contactsList.add(new Contacts("Saugat Malla" ,"9801323567",R.drawable.delete));
-        contactsList.add(new Contacts("Dahayang Rai" ,"9801234567",R.drawable.bridge));
-        contactsList.add(new Contacts("Bhuwan KC" ,"980123777",R.drawable.logo));
-        contactsList.add(new Contacts("Saugat Malla" ,"9801323567",R.drawable.delete));
+        contactsList.add(new Contacts("Raju Shrestha" ,"9801234567",R.drawable.bridge));
+        contactsList.add(new Contacts("Sugam Kapali" ,"980123777",R.drawable.logo));
+        contactsList.add(new Contacts("Manish Ghimire" ,"9801323567",R.drawable.delete));
+        contactsList.add(new Contacts("Renu Thapa" ,"9801234567",R.drawable.bridge));
+        contactsList.add(new Contacts("Rohit Magar" ,"980123777",R.drawable.logo));
+        contactsList.add(new Contacts("Amrit Chhetri" ,"9801323567",R.drawable.delete));
         ContactsAdapter contactsAdapter = new ContactsAdapter(getActivity(), contactsList);
         recyclerView.setAdapter(contactsAdapter);
 
