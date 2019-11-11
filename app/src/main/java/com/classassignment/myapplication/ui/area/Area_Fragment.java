@@ -1,4 +1,4 @@
-package com.classassignment.myapplication.ui.home;
+package com.classassignment.myapplication.ui.area;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -18,18 +17,18 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.classassignment.myapplication.R;
 
-public class HomeFragment extends Fragment {
+public class Area_Fragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private AreaViewModel areaViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
+        areaViewModel =
+                ViewModelProviders.of(this).get(AreaViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_area, container, false);
         final EditText editText = root.findViewById(R.id.etradius);
         final Button button = root.findViewById(R.id.btnradius);
-        homeViewModel.getText().observe(this, new Observer<String>() {
+        areaViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 button.setOnClickListener(new View.OnClickListener() {

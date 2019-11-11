@@ -1,4 +1,4 @@
-package com.classassignment.myapplication.ui.gallery;
+package com.classassignment.myapplication.ui.add;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -18,19 +17,19 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.classassignment.myapplication.R;
 
-public class GalleryFragment extends Fragment {
+public class AddFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private AddViewModel addViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                ViewModelProviders.of(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+        addViewModel =
+                ViewModelProviders.of(this).get(AddViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_add, container, false);
         final EditText editText = root.findViewById(R.id.ed1);
         final EditText editText1 = root.findViewById(R.id.ed2);
         final Button button = root.findViewById(R.id.btn);
-        galleryViewModel.getText().observe(this, new Observer<String>() {
+        addViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
 

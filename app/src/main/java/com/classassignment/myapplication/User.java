@@ -3,7 +3,9 @@ package com.classassignment.myapplication;
 public class User {
     private String User, Psd;
 
-    public  User(){}
+    public User() {
+    }
+
     public String getUser() {
         return User;
     }

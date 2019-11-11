@@ -7,10 +7,8 @@ public class TestLogin {
     boolean result = false;
     String Username, Password;
 
-
     public void setUserList(List<User> userList) {
         UserList = userList;
-
     }
 
     public String getUsername() {
@@ -34,18 +32,6 @@ public class TestLogin {
     }
 
     public boolean tstLogin() {
-//        User user =new User();
-//        user.setUser("sujan");
-//        user.setPass("sujan");
-//        UserList.add(user);
-//        setUserList(UserList);
-
-//        if (Username.equals( "sujan") && Password.equals("sujan")) {
-//                        result = true;
-//                    } else {
-//                        result = false;
-//                    }
-
 
         if (getUserList() != null) {
 
@@ -56,18 +42,10 @@ public class TestLogin {
                 } else {
                     result = false;
                 }
-
-                //Toast.makeText(getActivity(), ""+userdetail.getUser(), Toast.LENGTH_SHORT).show();
             }
         } else {
             result = false;
-
         }
-
-
         return result;
-
     }
-
-
 }

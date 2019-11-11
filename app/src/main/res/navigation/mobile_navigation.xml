@@ -7,21 +7,21 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.classassignment.myapplication.ui.home.HomeFragment"
+        android:name="com.classassignment.myapplication.ui.area.Area_Fragment"
         android:label="Area of circle"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_area" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.classassignment.myapplication.ui.gallery.GalleryFragment"
+        android:name="com.classassignment.myapplication.ui.add.AddFragment"
         android:label="Sum"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_add" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.classassignment.myapplication.ui.slideshow.SlideshowFragment"
+        android:name="com.classassignment.myapplication.ui.ContactDetail.ContactFragment"
         android:label="Contacts"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_contact" />
 
     <fragment
         android:id="@+id/nav_tools"
